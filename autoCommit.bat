@@ -1,7 +1,7 @@
 @echo off
 REM Define variables
 set REPO_DIR=D:\FinalProject\GitHubProject\multi-module-application
-set COMMIT_MESSAGE="Automated commit message"
+set COMMIT_MESSAGE=Automated commit message
 
 REM Navigate to the repository directory
 cd /d %REPO_DIR%
@@ -13,11 +13,14 @@ if not exist ".git" (
     exit /b 1
 )
 
+REM Pull changes from the remote repository to avoid conflicts
+git pull origin main
+
 REM Add all changes to the staging area
 git add .
 
 REM Commit changes with a message
-git commit -m %COMMIT_MESSAGE%
+git commit -m "%COMMIT_MESSAGE%"
 
 REM Push changes to the remote repository
 git push origin main
