@@ -6,7 +6,11 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.4.1</version>
+<<<<<<< HEAD
 		<relativePath/> <!-- lookup parent from repository -------------.abc-->
+=======
+		<relativePath/> <!-- lookup parent from repository -->
+>>>>>>> 65ae4fa3ea609fd63faf69d5089dd0ade00dafe8
 	</parent>
 	<groupId>com.las.moduler.application</groupId>
 	<artifactId>multi-module-application</artifactId>
