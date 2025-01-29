@@ -13,7 +13,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.jwt.token.service.UserService;
+import com.las.moduler.application.core.service.UserService;
+import com.las.moduler.application.core.security.JwtAuthenticationFilter;
+
+
+
 
 @Configuration
 public class SecurityConfig {
