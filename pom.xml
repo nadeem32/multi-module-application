@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-=======
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.1</version>
-<<<<<<< HEAD
-		<relativePath/> <!-- lookup parent from repository -------------.abc-->
-=======
-		<relativePath/> <!-- lookup parent from repository -->
->>>>>>> 65ae4fa3ea609fd63faf69d5089dd0ade00dafe8
+		<version>3.4.2</version>
+
+		<relativePath/> <!-- lookup parent from repository .abc-->
+
+	
+
 	</parent>
 	<groupId>com.las.moduler.application</groupId>
 	<artifactId>multi-module-application</artifactId>
@@ -30,35 +25,6 @@
 		<java.version>17</java.version>
 	</properties>
 	
-<dependencyManagement>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
->>>>>>> 24a4a71259aadbab57510ab07c08844da70fb214
-
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.2</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
-
-    <groupId>com.las.moduler.application</groupId>
-    <artifactId>multi-module-application</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>multi-module-application</name>
-    <description>multi module application</description>
-    <packaging>pom</packaging>
-
-    <properties>
-        <java.version>17</java.version>
-    </properties>
 
     <dependencyManagement>
         <dependencies>
