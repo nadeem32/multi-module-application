@@ -1,16 +1,16 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.las.moduler.application</groupId>
     <artifactId>multi-module-application</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.las.moduler.application.basemodule</groupId>
-  <artifactId>basemodule</artifactId>
+  <groupId>com.las.moduler.application.patientmodule</groupId>
+  <artifactId>patientmodule</artifactId>
    <version>0.0.1-SNAPSHOT</version>
-  <name>basemodule</name>
-  <description>BAseModule</description>
+  <name>Patient Module</name>
+  <description>Patient Regarding information</description>
+
   <dependencies>
         <!-- Inherit Dependencies from Parent -->
       <dependency>
@@ -22,9 +22,19 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency> 
         <dependency>
+  <groupId>com.las.moduler.application.basemodule</groupId>
+  <artifactId>basemodule</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+</dependency>
+  <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-devtools</artifactId>
             </dependency>
+    <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        
         <!--
          <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -35,15 +45,10 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
         <artifactId>modelmapper</artifactId>
         <version>3.1.0</version> <!-- Use the latest version available -->
     </dependency>
-     <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
+        
         <dependency>
             <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-            
-        </dependency>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>        
+        </dependency> 
     </dependencies>
-
 </project>

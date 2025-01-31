@@ -1,4 +1,4 @@
-package com.las.moduler.application.basemodule.utils;
+package com.las.moduler.application.patientmodule.config;
 
 
 

@@ -1,4 +1,4 @@
-package com.las.moduler.application.basemodule.utils;
+package com.las.moduler.application.basemodule.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
